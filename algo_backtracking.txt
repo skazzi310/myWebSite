@@ -1,0 +1,8 @@
+<ul id="content" class="collapsible" data-collapsible="expandable">
+        <li>
+            <div class="collapsible-header active"><i class="mdi-action-settings-ethernet"></i>The Knight</div>
+            <div class="collapsible-body">
+                <script src="https://gist.github.com/skazzi310/d1c5c340b79e40aeb57c.js"></script>
+            </div>
+        </li>
+    </ul>
