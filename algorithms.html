@@ -7,14 +7,16 @@
 
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="material.css"/>
+
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+
+    <!--my scripts-->
     <script type="text/javascript" src="js/materialSkazzi.js"></script>
-    <script type="text/javascript" src="js/forAlgorithms.js"></script>
-
-
+    <script type="text/javascript" src="js/algorithms_sidePanel.js"></script>
 
 </head>
 
@@ -30,7 +32,7 @@
                 <li><a href="index.html">About me</a></li>
                 <li class="active"><a href="algorithms.html">Algorithms</a></li>
                 <li><a href="">Blog</a></li>
-                <li><a href="">My Projects</a></li>
+                <li><a href="https://gist.github.com/skazzi310">My Projects</a></li>
             </ul>
         </div>
     </nav>
@@ -39,37 +41,36 @@
 
 <!-- side menu for hamburger button -->
 <div class="sideMenu">
-    <!--<div id="section_helloWorld" class="algo_section sectionactive">-->
-        <!--HELLO WORLD-->
-    <!--</div>-->
-
-    <!--<div id="section_backtracking" class="algo_section">-->
-        <!--BACKTRACKING-->
-        <!--<div id="subsection_knight" class="algo_subsection">-->
-            <!--<p id="span_knight1">The Knight</p>-->
-            <!--<p id="span_knight2">The Knight</p>-->
-            <!--<p id="span_knight3">The Knight</p>-->
-            <!--<p id="span_knight4">The Knight</p>-->
-
-        <!--</div>-->
-    <!--</div>-->
 
     <div id="hamb_list" class="collection">
         <a href="#!" id="algo_helloWorld" class="collection-item active blue">Hello World</a>
         <a href="#!" id="algo_backtracking" class="collection-item blue-text">Backtracking</a>
-            <!--<div id="algo_backtracking_subpanel">-->
-                <!--<ul class="collection">-->
-                    <!--<li class="collection-item">The Knight - Chess</li>-->
-                <!--</ul>-->
-             <!--</div>-->
 
-        <a href="#!" class="collection-item blue-text">Divide and Conqure</a>
+        <a href="#!" id="algo_divideconquer" class="collection-item blue-text">Divide and Conquer</a>
+
+        <div id="divideAndConquerContent" class="subContentContainer">
+            <ul id="divideAndConquerSubContent">
+                <li style="opacity: 0">
+                    <!--<h6><a href="#">Merge Sort</a></h6>-->
+                    <p><a id="src_quicksort" href="#!">Quick sort</a></p>
+                </li>
+                <li style="opacity: 0">
+                    <!--<h6><a href="#">Merge Sort</a></h6>-->
+                    <p><a href="#!">Merge sort</a></p>
+                </li>
+                <li style="opacity: 0">
+                    <!--<h6><a href="#">Merge Sort</a></h6>-->
+                    <p><a>Closes pair of points</a></p>
+                </li>
+            </ul>
+        </div>
+        <a href="#!" id="algo_dynamicprog" class="collection-item blue-text">Dynamic programming</a>
         <a href="#!" id="algo_graphs" class="collection-item blue-text">Graph Algorithms</a>
-            <!--<div id="algo_graphs_subpanel">-->
-                <!--<ul class="collection">-->
-                    <!--<li class="collection-item">Graph traversalls - DFS and BFS</li>-->
-                <!--</ul>-->
-           <!--</div>-->
+        <!--<div id="algo_graphs_subpanel">-->
+        <!--<ul class="collection">-->
+        <!--<li class="collection-item">Graph traversalls - DFS and BFS</li>-->
+        <!--</ul>-->
+        <!--</div>-->
         <a href="#!" class="collection-item blue-text">Geometric Algorithms</a>
         <a href="#!" class="collection-item blue-text">Greedy Algorithms</a>
     </div>
@@ -90,20 +91,24 @@
     </div>
 </div>
 
+
 <!--CONTENT-->
 <h4 style="text-align: center"> Hello World </h4>
-<div id="tester"></div>
+<h5 style="text-align: center"> (this page is under construction) </h5>
+
 
 <div id="algorithmCode" class="algoWrapper">
     <ul id="content" class="collapsible" data-collapsible="expandable">
-            <li>
-                <div class="collapsible-header active"><i class="mdi-action-settings-ethernet"></i>Hello World</div>
-                <div class="collapsible-body">
-                    <script src="https://gist.github.com/skazzi310/bab8e26b401b32722b47.js"></script>
-                </div>
-            </li>
-        </ul>
+        <li>
+            <div class="collapsible-header active"><i class="mdi-action-settings-ethernet"></i>Hello World</div>
+            <div id="srcShow" class="collapsible-body">
+                <script src="https://gist.github.com/skazzi310/bab8e26b401b32722b47.js"></script>
+                <!--<div data-gist="bab8e26b401b32722b47"></div> -->
+            </div>
+        </li>
+    </ul>
 </div>
+
 
 <!-- FOOTER -->
 <footer class="page-footer blue">
@@ -135,7 +140,7 @@
 </footer>
 
 <!--Import jQuery before materialize.js-->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
 <script type="text/javascript" src="materialize/js/materialize.js"></script>
 </body>
 </html>

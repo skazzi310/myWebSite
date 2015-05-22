@@ -94,14 +94,20 @@ div.sideMenu
 	position: fixed;
 	z-index: 999;
 	height: 100%;
-	width: 15%;
+	width: 20%;
 	top: 7%;
 	left: 0%;
 	display: none;
 	box-shadow: 5px 5px 15px gray;
 	background-color: white;
 	color: black;
+	overflow-y: auto;
 	/*text-align: center;*/
+}
+
+/* Contains subcontent for each category in side panel */
+div.subContentContainer {
+	padding-left: 30px;
 }
 
 div.algo_section
